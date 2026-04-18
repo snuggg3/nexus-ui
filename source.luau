@@ -1,4 +1,9 @@
 local UIS = game:GetService("UserInputService")
+
+if shared.NexusLib then
+	return
+end
+
 local Library = {}
 Library.__index = Library
 Library.CurrentWindow = nil
@@ -305,4 +310,5 @@ function Library:CreateWindow(title)
 	return Window
 end
 
+shared.NexusLib = Library
 return Library
