@@ -15,6 +15,10 @@ local TEXT_SIZE = 15
 local ELEMENT_PADDING = 10
 
 function Library:CreateWindow(title)
+	if Library.CurrentWindow then 
+        return Library.CurrentWindow 
+    end
+
 	local ScreenGui = Instance.new("ScreenGui")
 	ScreenGui.Name = "NexusUI"
 	ScreenGui.ResetOnSpawn = false
