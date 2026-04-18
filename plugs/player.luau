@@ -18,6 +18,9 @@ Window.MainGui.Destroying:Connect(function()
 	if connections.walkspeed_cnct then
 		connections.walkspeed_cnct:Disconnect()
 	end
+	if connections.jumppower_cnct then
+		connections.jumppower_cnct:Disconnect()
+	end
 end)
 
 local PlayerTab = Window:CreateTab("Player")
