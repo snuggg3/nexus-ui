@@ -1,6 +1,7 @@
 local UIS = game:GetService("UserInputService")
 local Library = {}
 Library.__index = Library
+Library.CurrentWindow = nil
 
 local Theme = {
 	Background = Color3.fromRGB(26, 26, 26),
@@ -95,6 +96,7 @@ function Library:CreateWindow(title)
 
 	local Window = {}
 	Window.MainGui = ScreenGui
+	Library.CurrentWindow = Window
 
 	local firstTab = true
 	local currentButton = nil
