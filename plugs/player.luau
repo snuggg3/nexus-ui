@@ -21,7 +21,6 @@ end)
 local PlayerTab = Window:CreateTab("Player")
 
 PlayerTab:CreateSlider("WalkSpeed", 0, 999, default_walkspeed, function(value)
-    print(value)
     local character = local_player.Character 
     if not character then
         return
