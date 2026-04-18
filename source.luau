@@ -17,7 +17,9 @@ function Library:CreateWindow(title)
 	local ScreenGui = Instance.new("ScreenGui")
 	ScreenGui.Name = "NexusUI"
 	ScreenGui.ResetOnSpawn = false
-	ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	ScreenGui.DisplayOrder = 100
+	ScreenGui.Parent = game:GetService("CoreGui")
+	--ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 	local Main = Instance.new("Frame", ScreenGui)
 	Main.Size = UDim2.new(0, 440, 0, 300)
