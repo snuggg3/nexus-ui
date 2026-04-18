@@ -1,4 +1,3 @@
---local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/snuggg3/nexus-ui/refs/heads/main/source.luau"))()
 local Library = shared.NexusLib
 local Window = Library:CreateWindow("Project Nexus")
 
