@@ -46,7 +46,7 @@ Adds a selectable list of options.
 ## Basic Implementation
 
 ```lua
-local Library = loadstring(game:HttpGet("link_here"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/snuggg3/nexus-ui/refs/heads/main/source.luau"))()
 local Window = Library:CreateWindow("Project Nexus")
 
 local Tab = Window:CreateTab("Settings")
