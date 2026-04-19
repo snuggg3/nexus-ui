@@ -87,12 +87,12 @@ Window.MainGui.Destroying:Connect(function()
     shared.NexusLib = nil
 end)
 
-local plugins = {
+local plugs = {
     "https://raw.githubusercontent.com/snuggg3/nexus-ui/refs/heads/main/plugs/util.luau",
     "https://raw.githubusercontent.com/snuggg3/nexus-ui/refs/heads/main/plugs/player.luau"
 }
 
-for _, url in pairs(plugins) do
+for _, url in pairs(plugs) do
     task.spawn(function()
         pcall(function()
             loadstring(game:HttpGet(url))()
