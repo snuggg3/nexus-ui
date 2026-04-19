@@ -8,6 +8,7 @@ local StarterPlayer = game:GetService("StarterPlayer")
 local local_player = Players.LocalPlayer
 local DEFAULT_WALKSPEED = StarterPlayer.CharacterWalkSpeed
 local DEFAULT_JUMPPOWER = StarterPlayer.CharacterJumpPower
+local DEFAULT_FIELDOFVIEW = workspace.CurrentCamera.FieldOfView
 
 local connections = {
 	walkspeed_cnct = nil,
@@ -53,4 +54,8 @@ PlayerTab:CreateSlider("JumpPower", 0, 999, DEFAULT_JUMPPOWER, function(value)
 			humanoid.JumpPower = value
 		end
 	end)
+end)
+
+PlayerTab:CreateSlider("Field Of View", 0, 120, DEFAULT_FIELDOFVIEW, function(value)
+	workspace.CurrentCamera.FieldOfView = value
 end)
