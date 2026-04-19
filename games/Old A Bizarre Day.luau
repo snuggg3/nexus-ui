@@ -44,7 +44,13 @@ end
 local function item_auto_farm()
 	while is_auto_farming do
 		local character = local_player.Character
-		local humanoid = character and character:FindFirstChildWhichIsA("Humanoid")
+
+		if not character then
+			task.wait(1)
+			continue
+		end
+		
+		local humanoid = character:FindFirstChildWhichIsA("Humanoid")
 		
 		if not humanoid then
             task.wait(1)
