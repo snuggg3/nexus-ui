@@ -24,8 +24,9 @@ local local_player = game:GetService("Players").LocalPlayer
 
 local ItemFarmTab = Window:CreateTab("Item Farm")
 
-local map_size = workspace.Map.NEWMAP:GetExtentsSize() --Vector3.new(6068, 512, 7091)
-local map_pivot = workspace.Map.NEWMAP:GetPivot().Position --Vector3.new(-1778.78, 405.34, 13447.03)
+local Map = workspace:WaitForChild("Map")
+local map_size = Map:WaitForChild("NEWMAP"):GetExtentsSize() --Vector3.new(6068, 512, 7091)
+local map_pivot = Map:WaitForChild("NEWMAP"):GetPivot().Position --Vector3.new(-1778.78, 405.34, 13447.03)
 local min_bounds = map_pivot - (map_size / 2)
 local max_bounds = map_pivot + (map_size / 2)
 
