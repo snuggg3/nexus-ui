@@ -18,3 +18,7 @@ end)
 UtilTab:CreateButton("Server Hop", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Vcsk/RobloxScripts/refs/heads/main/ServerHop.lua"))();
 end)
+
+UtilTab:CreateButton("Rejoin", function()
+    game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+end)
