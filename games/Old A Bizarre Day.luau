@@ -76,7 +76,7 @@ local function item_auto_farm()
 	end
 end
 
-local item_list = { "Arrow", "Rokakaka Fruit", "Requiem Arrow", "Holy Corpse", "Frog", "Nostalgic Relic", "Shadow Camera", "Shiny Gem", "Dio's Diary", "Vampire Mask" }
+local item_list = { "Arrow", "Rokakaka Fruit", "Requiem Arrow", "Holy Corpse", "Frog", "Nostalgic Relic", "Shadow Camera", "Shiny Gem", "Dio's Diary", "Vampire Mask", "Camera" }
 for _, name in item_list do
 	ItemFarmTab:CreateSwitch(name, false, function(value)
 		items_to_farm[name] = value
