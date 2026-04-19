@@ -1,11 +1,11 @@
-repeat
+--[[repeat
 	task.wait()
-until game:IsLoaded()
+until game:IsLoaded()]]
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/snuggg3/nexus-ui/refs/heads/main/source.luau"))()
 local Window = Library:CreateWindow("Project Nexus")
 
-queue_on_teleport(game:HttpGet("https://raw.githubusercontent.com/snuggg3/nexus-ui/refs/heads/main/games/Old%20A%20Bizarre%20Day.luau"))
+--queue_on_teleport(game:HttpGet("https://raw.githubusercontent.com/snuggg3/nexus-ui/refs/heads/main/games/Old%20A%20Bizarre%20Day.luau"))
 
 Window.MainGui.Destroying:Connect(function()
     shared.NexusLib = nil
